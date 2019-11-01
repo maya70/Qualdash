@@ -1,6 +1,6 @@
 # Qualdash
 This branch contains site-specific configuration for Stoke
-###########################################################
+###################################################
 
 
 # Metric cards for PICANet: 
@@ -42,15 +42,7 @@ Bars subview:
 History subview: 
 
 
-# Card 5: Dependency (cont'd)
-
-Main view: 
-Pie subview: 
-Bars subview: 
-History subview: 
-
-
-# Card 6: Data Quality
+# Card 5: Data Quality
 
 Main view: 
 Pie subview: 
