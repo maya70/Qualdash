@@ -35,7 +35,7 @@ admdate <- as.Date(paste(admission$AdDate), dateFormat)
 
 adyear <- year(admdate)
 
-admission <- cbind(admission, adyear)
+admission <- cbind(admission, adyear, invVentEncounter =0)
 
 
 
@@ -73,6 +73,7 @@ for(year in unique(admission$adyear)){
 yfn = paste(dest_file_path ,'avail_years.csv', sep='' )
 # read in values already in avail_years
 av <- read_csv(yfn)
+temp <- av$x
 for(year in unique(admission$adyear)){
   if(!(year %in% av$x))
     temp <- c(av$x, year)
@@ -81,7 +82,7 @@ write.csv(temp, yfn, row.names = FALSE)
 
 
 # read raw activity data
-source = paste(source_file_path, "Dailyinterventions.csv", sep='')
+source = paste(source_file_path, "dailyinterventions.csv", sep='')
 activity <- read_csv(source)
 
 # split activity file by year of admission
@@ -100,18 +101,32 @@ for(year in unique(df$adyear)){
   M <- merge(cur_adm, activity, by=c('EventID'), all.x=T)
   
   # select only relevant columns for QualDash
-  d = data.frame(M$EventID, M$AdDate, M$PccHrg)
-  colnames(d) <- c('EventID', 'adDate', 'hrggroup')
+  d = data.frame(M$EventID, M$ActivityMonth , M$ActivityDate , M$AdDate,   M$ActivityDate, M$PccHrg, M$InvVentET, M$InvVentTT)
+  colnames(d) <- c('EventID', 'ActivityMonth' ,'ActivityDate' , 'adDate', 'invVentStart', 'hrggroup', 'InvVentET', 'InvVentTT')
   
   for(level in unique(d$hrggroup)){
     admission[, toString(level) ] <- 0
   }
   
+  ventEvt <- d$InvVentET | d$InvVentTT
+  count = 0
   for(row in 1:nrow(d)){
     id <- d$EventID[row] 
     level <- d$hrggroup[row]
     lev <- toString(level[1])
+    # record the number of days at dependency level lev
     admission[which(admission$EventID == id), lev] <- 1 + admission[which(admission$EventID == id), lev]
+    
+    # record the start date of invasive ventilation for this admission
+    if(ventEvt[row]){
+      count <- count + 1
+      # is this the first time of invVent?
+      if(admission[which(admission$EventID == id), 'invVentEncounter'] == 0){
+        admission[which(admission$EventID == id), 'invVentEncounter'] <- 1
+        admission[which(admission$EventID == id), 'invVentStart'] <- d$ActivityDate[row]
+      }
+      
+    }
     
   }
   tmp = subset(admission, adyear == year)     
