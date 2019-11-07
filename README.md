@@ -6,10 +6,9 @@ This branch contains site-specific configuration for Stoke
 
 
 
-### Card 1: 
-Metric: Mortality by admission month
+### Card 1: Mortality by admission month
 Main view: Admission count and death count by month of admission
-Main task: How many patients were admitted in a month? and how many of them were eventually deceased? 
+Main task: How many admissions in a month are alive and how many of them were eventually deceased? 
 
 Pie subview: primary reason for admission, admission type, ethnicity
 * Possible tasks: 
@@ -20,18 +19,27 @@ Pie subview: primary reason for admission, admission type, ethnicity
 Bars subview: PIM3 (sum)
 * Possible tasks: 
    * Did a month with high mortality have a higher total PIM3 score (which indicates severity of illness) in the admitted patient cohort? 
-History subview: (same variables in main view with a historic context)
+History subview: (same variables in main view with a historical context)
 * Possible tasks:
   * Was the mortality in February this year higher than the same time in previous years?
 
 
-### Card 2: 
+### Card 2: 48-hour readmission 
 
-Main view: 48-hour readmission
+Main view: Discharge count and 48-hour readmission event count organised by month of discharge
+Main task: How many patients were discharged in a month and how many were readmitted within 48 hours? 
 
-Pie subview: 
-Bars subview: 
-History subview: 
+Pie subview: source of admission, care area admitted from, destination following discharge from unit
+* Possible tasks: 
+  * What was the source of admission for patients with 48-hour readmission?
+  * Which care area where patients with 48-hour discharge admitted from?
+  * What was the most common destination following discharge from unit for discharged patients in a month? 
+
+Bars subview: unplanned admissions
+* Possible tasks:
+  * What was the total number of unplanned admissions in a month with high rates of 48-hour readmission? 
+
+History subview: (same variables in the main view with historical context)
 
 
 ### Card 3: Bed days and ventilation
