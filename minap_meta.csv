@@ -1,0 +1,156 @@
+fieldName,fieldType
+1.01 Hospital,n
+1.02 HospitalNumber,o
+1.03 NHSNumber,o
+NHSNumberVS,n
+Number of Previous admissions (ACS Patients),q
+Delay from Symptom Onset to Call For Help,q
+Delay from Call for Help to Emergency Services Arrival,q
+Delay from Call for Help to Arrival in Hospital,q
+Delay from Call for Help to Reperfusion Treatment,q
+Delay from Arrival in Hospital to Reperfusion Treatment,q
+Delay from Symptom Onset to Reperfusion Treatment,q
+Delay from Admission to First Hospital to PPCI (Interventional Audit),q
+Record Created By,n
+ACPN Nurse,n
+Signed-off ?,n
+GPFH Code,n
+Date/Time of First ECG,t
+Time from Arrival at Hospital to First ECG,t
+Grace Score,q
+Date/Time left referring hospital,t
+Patient District Number,n
+1.04 Surname,n
+1.05 Forename,n
+1.06 DateofBirth,t
+1.07 Gender,n
+1.09 PatientStatus,n
+1.10 Fullpostcode,o
+1.11 GPPractice,n
+1.13 EthnicGroupV9,n
+2.01 AdmissionDiagnosis,n
+2.02 Method of admission,n
+2.03 ECGDeterminingTreatment,n
+2.04 Aspirin,n
+2.05 PreviousMI,n
+2.06 PreviousAngina,n
+2.07 Hypertension,n
+2.08 Hypercholesterolaemia,n
+2.09 PeripheralVascularDisease,n
+2.10 CerebrovascularDisease,n
+2.11 AsthmaOrCOPD,n
+2.12 ChronicRenalFailure,n
+2.13 HeartFailure,n
+2.14 WereCardiacEnzymesElevated,n
+2.15 SerumCholesterol,q
+2.16 CurrentSmoker,n
+2.17 Diabetes,n
+2.18 PreviousIntervention,n
+2.19 PreviousCABG,n
+2.20 SystolicBP,q
+2.21 HeartRate,q
+2.22 AdmittingConsultantType,n
+2.23 PlaceFirstLeadECGPerformed,n
+2.24 BetaBlockerUse,n
+2.25 ACEIorARBUse,n
+2.26 StatinUse,n
+2.28 SerumGlucose,q
+2.29 Height,q
+2.30 Weight,q
+2.31 LeftVentricularEjectionFraction,n
+2.32 FamilyHistoryofCHD,n
+2.33 CardiologicalCare,n
+2.34 Creatinine,q
+2.35 Haemoglobin,q
+2.36 InfarctionSite,n
+2.37 QRSComplex,n
+2.38 ThienoUse,n
+2.39 AdmissionMethod,n
+2.40 PatientLocationSTEMIOnset,n
+2.41 KillipClass,n
+2.42 StressEcho,n
+3.01 SymptomOnset,t
+3.02 CallforHelp,t
+3.03 ArrivalofFirstHelp,t
+3.04 ArrivalOfEmergencyService,t
+3.05 AmbulanceJobNumber,n
+3.06 ArrivalAtHospital,t
+3.08 ReasonTreatmentNotGiven,n
+3.09 ReperfusionTreatment,t
+3.10 JustifiedDelay,n
+3.11 WhereTreamentGiven,n
+3.13 FirstCardiacArrest,t
+3.14 CardiacArrest,n
+3.15 PresentingRhythm,n
+3.16 OutcomeOfArrest,n
+3.17 AdmissionWard,n
+3.19 PeakTroponin,q
+3.20 UnfractionatedHeparin,n
+3.21 Lowmolecularweightheparin,n
+3.22 ThienopyridineInhibitor,n
+3.24 iv2b3aAgent,n
+3.25 ivbblocker,n
+3.27 CalciumChannelBlocker,n
+3.28 IVNitrate,n
+3.29 OralNitrate,n
+3.30 PotassiumChannelModulator,n
+3.31 Warfarin,n
+3.32 Angiotensin,n
+3.33 ThiazideDiuretic,n
+3.34 LoopDiuretic,n
+3.36 ThrombolyticDrug,n
+3.37 TroponinAssay,n
+3.38 Fondaparinux,n
+3.39 InitialReperfusionTreatment,n
+3.40 AdditionalReperfusionTreatment,n
+3.41 Inpatientdiabetesmgmt,n
+3.42 diabetictherapyatdisch,n
+3.43 OralBetaBlocker,n
+3.44 Aldosterone,n
+3.45 Bivalirudin,n
+3.46 CF_ArrivalatHospital,t
+3.47 CF_Assessat1stHosp,n
+3.48 CF_AssessatIntervCentre,n
+3.49 CF_IntendedReperfusionProc,n
+3.50 CF_ProcPerformed,n
+3.51 CF_WhyNoAngio,n
+3.52 CF_WhynoIntervention,n
+3.53 InsulinStart,t
+4.01 DischargeDate,t
+4.02 FinalDiagnosis,n
+4.03 BleedingComplications,n
+4.04 DeathInHospital,n
+4.05 Betablocker,n
+4.06 ACEInhibitor,n
+4.07 Statin,n
+4.08 AspirinSecondary,n
+4.09 CardiacRehabilitation,n
+4.10 ExerciseTest,n
+4.11 Echocardiography,n
+4.12 PerfusionOrRadionuclideScan,n
+4.13 CoronaryAngiography,n
+4.14 CoronaryIntervention,n
+4.15 ReferralDateTime,t
+4.16 ModeOfDischarge,n
+4.17 TransferDate (transferdatedaycase),t
+4.18 LocalAngioDate,t
+4.19 LocalPCICABG,t
+4.20 ReferralCentre,n
+4.21 ReferralHospital,n
+4.23 FollowedUpBy,n
+4.24 Reinfarction,n
+4.26 ReturnDate,n
+4.27 DischargedOnThieno,t
+4.28 DischargedOnAldosterone,n
+4.29 InterventionalHospitalProcedure,n
+4.3 AngioDelay,n
+4.31 DischargedOnTicagrelor,n
+4.32 HighRiskNSTEMI,n
+5.01 SmokingCessationAdvice,n
+5.02 DietaryAdvice,n
+adyear,n
+P2Y12,n
+dtb,q
+dta,q
+dtaTarget,n
+dtaNoTarget,n

@@ -1,0 +1,28 @@
+{
+                      "metric": "Data Quality",
+                      "mark": "bar", // should remove this 
+                        "x": "AdDate",
+                        "y": ["der_missing", "der_invalid"], 
+                        "yfilters": {"der_missing" : "*", 
+                                    "der_invalid": "*"}, 
+                        "yaggregates": ["sum", "sum"], 
+                        "legend": ["Missing values", ""],
+                        "xType": "t",
+                        "yType": ["q", "q"],  
+                        "xspan": "year",    
+                        "yspan": "unit", 
+                        "ylabel": "Num. Values",                         
+                        "tspan": 3,                           
+                        "granP": ["unit", "unit"], 
+                        "ehr": "Admissions",
+                        /** Slave Tasks spec begin here **/ 
+                        "categories": ["missing1","missing2", "missing3", "missing4"],      
+                        "quantities": [
+                                        {"q":"UnitDisStatus",  "granP":["unit"], "yaggregates": "sum", 
+                                         "filters": {"where": { "UnitDisStatus":"2" } } },
+                                        {"q":"EventID",  "granP":["unit"], "yaggregates": "count" }
+                                       ], // from tasks with a single quantitative variable                                                                   
+                        "granT": {"monthly-annual": ["der_missing"]}   // the first element holds the master view's granT                                             
+          
+                     }
+                      
