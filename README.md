@@ -155,10 +155,10 @@ This branch contains site-specific configuration for Stoke
 
 ### Card 5: Referral for cardiac rehabilitation
 * Main view: number or patients admitted in a month and proportions of whom who were:
- * referred for cardiac rehabilitation 
- * not referred for cardiac rehabilitation
- * not indicated for cardiac rehabilitation
- * patients who declined cardiac rehabilitation
+  * referred for cardiac rehabilitation 
+  * not referred for cardiac rehabilitation
+  * not indicated for cardiac rehabilitation
+  * patients who declined cardiac rehabilitation
    
 * Main task: How many admissions in a month fall in each of the categories described above?
 
@@ -172,11 +172,11 @@ This branch contains site-specific configuration for Stoke
 
 ### Card 6: Accute use of aspirin
 * Main view: number or patients admitted in a month and proportions of whom who were:
- * already on aspiring when they were admitted
- * given aspirin/antiplatelet drug out of hospital
- * given aspirin/antiplatelet drug after arrival at hospital
- * contraindicated to be given given aspirin/antiplatelet drug
- * not given aspirin/antiplatelet drug
+  * already on aspiring when they were admitted
+  * given aspirin/antiplatelet drug out of hospital
+  * given aspirin/antiplatelet drug after arrival at hospital
+  * contraindicated to be given given aspirin/antiplatelet drug
+  * not given aspirin/antiplatelet drug
 
 * Main task: How many admissions in a month fall in each of the categories described above?
 
