@@ -1,6 +1,6 @@
 $Q.Picanet = {
-  "availMetrics": [{"value": "Mortality",
-                    "text": "Mortality"},
+  "availMetrics": [{"value": "Mortality by admission month",
+                    "text": "Mortality by admission month"},
                     {"value": "48h Readmission",
                       "text": "48h Readmission"},
                     {"value": "Bed Days",
@@ -45,7 +45,7 @@ $Q.Picanet = {
                   "der_depLevel5": "IC Advanced",
                   "der_depLevel6": "IC Advanced Enhanced"
                 },
-"displayVariables": [{  "metric": "Mortality",
+"displayVariables": [{  "metric": "Mortality by admission month",
                         "mark": "bar",
                         "chart": "grouped",
                         "colorScale": "categorical",
@@ -203,8 +203,8 @@ $Q.Picanet = {
 };
 
 $Q.Minap = {
-    "availMetrics": [{"value": "Mortality",
-                        "text": "Mortality"},
+    "availMetrics": [{"value": "Mortality by admission month",
+                        "text": "Mortality by admission month"},
                         //{"value": "derived_readmission",
                          // "text": "48h Readmission"},
                         {"value": "Delay from Call for Help to Reperfusion Treatment",
@@ -235,7 +235,7 @@ $Q.Minap = {
                       },
     "displayVariables": [
                          {  
-                        "metric": "Mortality",                      
+                        "metric": "Mortality by admission month",                      
                         "mark": "bar", // should remove this
                         "chart": "grouped",
                         "x": "3.06 Date/time arrival at hospital",
