@@ -153,18 +153,36 @@ This branch contains site-specific configuration for Stoke
 * History subview: (same variables in main view with a historical context)
   
 
-### Card 5: 
+### Card 5: Referral for cardiac rehabilitation
+* Main view: number or patients admitted in a month and proportions of whom who were:
+ * referred for cardiac rehabilitation 
+ * not referred for cardiac rehabilitation
+ * not indicated for cardiac rehabilitation
+ * patients who declined cardiac rehabilitation
+   
+* Main task: How many admissions in a month fall in each of the categories described above?
 
-Main view: 
-Pie subview: 
-Bars subview: 
-History subview: 
+* Pie subview: gender, justified delay ``` candidate for change ```
+  * Possible tasks: 
+    * Were the majority of patients referred for cardiac rehabilitation in a month male or female? 
+    
+* Bars subview: door-to-angiogram target met, door-to-angiogram (average) ```candidates for change ```
+* History subview: (same variables in main view with a historical context)
+  
 
+### Card 6: Accute use of aspirin
+* Main view: number or patients admitted in a month and proportions of whom who were:
+ * already on aspiring when they were admitted
+ * given aspirin/antiplatelet drug out of hospital
+ * given aspirin/antiplatelet drug after arrival at hospital
+ * contraindicated to be given given aspirin/antiplatelet drug
+ * not given aspirin/antiplatelet drug
 
-### Card 6: 
+* Main task: How many admissions in a month fall in each of the categories described above?
 
-Main view: 
-Pie subview: 
-Bars subview: 
-History subview: 
+* Pie subview: each of the individual categories is shown in a tab  ```candidate for change```    
+   
+* Bars subview: door-to-angiogram target met, door-to-angiogram (average) ```candidates for change ```
+* History subview: (same variables in main view with a historical context)
+   
 
