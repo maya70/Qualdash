@@ -44,18 +44,29 @@ History subview: (same variables in the main view with historical context)
 
 ### Card 3: Bed days and ventilation
 
-Main view: 
-Pie subview: 
-Bars subview: 
-History subview: 
+Main view: Number of bed days and number of invasive ventilation days in each month
+Main task: What was the total number of bed days and the number of invasive ventilation days in a month?
+
+Pie subview: Invasive ventilation (this needs to change)
+
+Bars subview: PIM3 (this needs to change)
+
+History subview: (same as main view with historical context)
 
 
 ### Card 4: Dependency
 
-Main view: 
-Pie subview: 
-Bars subview: 
-History subview: 
+Main view: Number of admissions at each level of dependency organised by months of admission
+Main task: How many patients were at level of dependency X in month Y? 
+Pie subview: Primary reason of admission, admission type, gender, ethnicity
+* Possible tasks:
+  * What was the primary reason of admission for patients at the enhanced care dependency level?
+  * What was the type of admission for patients at the intensive care advanced dependency?
+  * Are the majority of patients in intensive care male or female? 
+  
+Bars subview: separate bar charts for individual dependency levels (2 examples given for the first two levels of dependency to show that each category can be displayed separately). 
+
+History subview: (same as main view with a historical context). 
 
 
 ### Card 5: Data Quality
