@@ -1,5 +1,5 @@
 # Qualdash
-This branch contains site-specific configuration for Stoke
+This branch contains site-specific configuration for Blackburn
 
 
 ## Metric cards for PICANet: 
